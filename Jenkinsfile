@@ -1,5 +1,5 @@
 node() {
-    docker.withRegistry('hub.docker.com', 'hub.docker.com') {
+    docker.withRegistry('https://hub.docker.com/', 'hub.docker.com') {
     
         git url: "https://github.com/vdrizheruk/jenkins-test.git", credentialsId: 'github.com'
     
